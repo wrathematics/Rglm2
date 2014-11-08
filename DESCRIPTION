@@ -1,0 +1,13 @@
+Package: Rglm2
+Version: 0.1.0
+License: GPL-2
+Title: Linear and Generalized Linear Models
+Description: TODO
+Depends: R (>= 2.14.0), linmod (>= 0.1.0)
+NeedsCompilation: no
+ByteCompile: yes
+Authors@R: c(person("R Core team", role = "cph", comment = "Functions
+        taken directly from R with only extremely trivial modifications."),
+        person("Drew", "Schmidt", role="cre", email="wrathematics@gmail.com"))
+Maintainer: Drew Schmidt <wrathematics@gmail.com>
+
