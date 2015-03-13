@@ -67,9 +67,11 @@ Installing the package and its dependencies directly from GitHub
 is simple via the devtools package:
 
 ```r
-devtools::install_github("wrathematics/RNACI") # dependency
-devtools::install_github("wrathematics/linmod") # dependency
-devtools::install_github("wrathematics/Rglm2")
+library(devtools)
+
+install_github("wrathematics/RNACI") # dependency
+install_github("wrathematics/linmod") # dependency
+install_github("wrathematics/Rglm2")
 ```
 
 

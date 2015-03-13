@@ -22,6 +22,49 @@
 #     but by the `methodfun()` variable.
 
 
+
+
+
+#' lm2
+#' 
+#' Linear model fitter like \code{lm()}, but with the linmod package
+#' driving the model fitting.
+#' 
+#' @param formula
+#' 
+#' @param data
+#' 
+#' @param subset
+#' 
+#' @param weights
+#' 
+#' @param na.action
+#' 
+#' @param method
+#' 
+#' @param model
+#' 
+#' @param x
+#' 
+#' @param y
+#' 
+#' @param qr
+#' 
+#' @param singular.ok
+#' 
+#' @param contrasts
+#' 
+#' @param offset
+#' 
+#' @param ...
+#' Additional arguments.
+#' 
+#' @return
+#' An object of class \code{lm}.
+#' 
+#' @name lm2
+#' @rdname lm2
+#' @export
 lm2 <- function (formula, data, subset, weights, na.action, method = "linmod", 
     model = TRUE, x = FALSE, y = FALSE, qr = TRUE, singular.ok = TRUE, 
     contrasts = NULL, offset, ..., check.rank=TRUE) 

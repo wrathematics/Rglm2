@@ -1,4 +1,71 @@
-### Copied directly from R 3.1.2 with "glm.fit" replaced with "glm_fit"
+#  Copyright (C) 1995-2014 The R Core Team
+#
+#  This program is free software; you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation; either version 2 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  A copy of the GNU General Public License is available at
+#  http://www.r-project.org/Licenses/
+
+
+# Modifications: 2014, Schmidt
+# The following changes were made:
+#   * "glm.fit" replaced with "glm_fit"
+
+
+
+#' glm2
+#' 
+#' Generalized Linear model fitter like \code{lm()}, but with the linmod 
+#' package driving the model fitting.
+#' 
+#' @param formula
+#' 
+#' @param family
+#' 
+#' @param data
+#' 
+#' @param weights
+#' 
+#' @param subset
+#' 
+#' @param na.action
+#' 
+#' @param start
+#' 
+#' @param etastart
+#' 
+#' @param mustart
+#' 
+#' @param offset
+#' 
+#' @param control
+#' 
+#' @param model
+#' 
+#' @param metod
+#' 
+#' @param x
+#' 
+#' @param y
+#' 
+#' @param contrasts
+#' 
+#' @param ...
+#' Additional arguments.
+#' 
+#' @return
+#' An object of class \code{lm}.
+#' 
+#' @name glm2
+#' @rdname glm2
+#' @export
 glm2 <- function (formula, family = gaussian, data, weights, subset, 
     na.action, start = NULL, etastart, mustart, offset, control = list(...), 
     model = TRUE, method = "glm.fit", x = FALSE, y = TRUE, contrasts = NULL, 
